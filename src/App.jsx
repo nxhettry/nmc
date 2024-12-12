@@ -6,9 +6,9 @@ import Sidebar from "./routes/Sidebar";
 
 function App() {
   return (
-    <div className="min-h-screen font-ubuntu w-screen font-bold flex">
+    <div className="max-h-screen font-ubuntu w-screen font-bold flex">
       <Sidebar />
-      <div className="flex-1 border-blue-500 border-2">
+      <div className="flex-1 border-blue-500 border-2 overflow-y-scroll">
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Dashboard />} />
